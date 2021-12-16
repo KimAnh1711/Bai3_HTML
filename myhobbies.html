@@ -3,30 +3,76 @@
     <head>
         <title>My hobby</title>
         <style>  
-         .wufoo {
-            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;background-color: rgb(208, 240, 250);
+        .myform {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+            background-color: white;
+            padding: 20px;
         }
         .btn-send {
             display: inline-block;
         }
+        .title {
+            color: white;
+        }
+        .label {
+            color: blue;
+        }
+        .hobby {
+            color: orange;
+            width: 100px;
+            display: inline-block;
+        }
+        .inputgroup {
+            padding-bottom: 10px
+        }
+        .title-wrapper {
+            text-align: center;
+            background-color: red;
+            padding: 8px;
+            font-size: 20px;
+        }
+        .form-wrapper {
+            background-color: rgb(0, 204, 255);
+            padding: 20px
+        }
+        .label-email {
+            padding-right: 31px;
+        }
+
         </style>
     </head>
     <body>
-        <form method="get" action="myhobby.html" class="wufoo">
-            <font color="red"><h2>SỞ THÍCH CỦA BẠN</h2> </font>
-            <font color="blue"><p>Họ và tên <input type="text" name="name"/> </p></font>
-            <font color="blue"><p>Email <input type="text" name="email"/> </p></font>
-            <font color="blue"><p>Sở thích <input type="text" name="hobby"/> </p></font>
-            <font color="orange"><input type="checkbox" name="sport"/>Thể thao</font>
-            <font color="orange"><input type="checkbox" name="music"/>Âm nhạc</font>
-            <font color="orange"><input type="checkbox" name="read"/>Đọc sách </br> </font>
-            <font color="orange"><input type="checkbox" name="web"/>Lướt web</font>
-            <font color="orange"><input type="checkbox" name="game"/>Chơi game</font>
-            <font color="orange"><input type="checkbox" name="movie"/>Điện ảnh <br></font>
-            <font color="orange"><input type="checkbox" name="movie"/>Du lịch</font>
-            <div>
-                <p class="btn-send"><input type="button" name="sendinformation" value="Gửi thông tin"/></p>
-                <p class="btn-send"><input type="button" name="reset" value="Nhập lại"/></p>
+        <div class="form-wrapper">
+            <div class="title-wrapper">
+                SỞ THÍCH CỦA BẠN
             </div>
+            <form method="get" action="myhobby.html" class="myform">
+                <div>
+                    <div class="inputgroup">
+                        <span class="label">Họ và tên</span> <input type="text" name="name"/> 
+                    </div>
+            
+                    <div class="inputgroup">
+                        <span class="label label-email">Email</span> <input type="text" name="email"/> 
+                    </div>
+
+                    <div>
+                        <p class="label">Sở thích</p>
+                        <input type="checkbox" value="sport" name="hobby"/><span class="hobby">Thể thao</span>
+                        <input type="checkbox" value="music" name="hobby"/><span class="hobby">Âm nhạc</span>
+                        <input type="checkbox" value="readbook" name="hobby"/><span class="hobby">Đọc sách</span><br>
+                        <input type="checkbox" value="web" name="hobby"/><span class="hobby">Lướt web</span>
+                        <input type="checkbox" value="playgame" name="hobby"/><span class="hobby">Chơi game</span>
+                        <input type="checkbox" value="movie" name="hobby"/><span class="hobby">Điện ảnh</span><br>
+                        <input type="checkbox" value="travel" name="hobby"/><span class="hobby">Du lịch</span>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="btn-send"><input type="button" name="sendinformation" value="Gửi thông tin"/></p>
+                    <p class="btn-send"><input type="button" name="reset" value="Nhập lại"/></p>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
