@@ -16,6 +16,9 @@
         }
         .label {
             color: blue;
+            width: 150px;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         .hobby {
             color: orange;
@@ -34,9 +37,6 @@
         .form-wrapper {
             background-color: rgb(0, 204, 255);
             padding: 20px
-        }
-        .label-email {
-            padding-right: 31px;
         }
 
         </style>
@@ -57,14 +57,16 @@
                     </div>
 
                     <div>
-                        <p class="label">Sở thích</p>
-                        <input type="checkbox" value="sport" name="hobby"/><span class="hobby">Thể thao</span>
-                        <input type="checkbox" value="music" name="hobby"/><span class="hobby">Âm nhạc</span>
-                        <input type="checkbox" value="readbook" name="hobby"/><span class="hobby">Đọc sách</span><br>
-                        <input type="checkbox" value="web" name="hobby"/><span class="hobby">Lướt web</span>
-                        <input type="checkbox" value="playgame" name="hobby"/><span class="hobby">Chơi game</span>
-                        <input type="checkbox" value="movie" name="hobby"/><span class="hobby">Điện ảnh</span><br>
-                        <input type="checkbox" value="travel" name="hobby"/><span class="hobby">Du lịch</span>
+                        <div class="label">Sở thích</div>
+                        <div>
+                            <input type="checkbox" value="sport" name="hobby"/><span class="hobby">Thể thao</span>
+                            <input type="checkbox" value="music" name="hobby"/><span class="hobby">Âm nhạc</span>
+                            <input type="checkbox" value="readbook" name="hobby"/><span class="hobby">Đọc sách</span><br>
+                            <input type="checkbox" value="web" name="hobby"/><span class="hobby">Lướt web</span>
+                            <input type="checkbox" value="playgame" name="hobby"/><span class="hobby">Chơi game</span>
+                            <input type="checkbox" value="movie" name="hobby"/><span class="hobby">Điện ảnh</span><br>
+                            <input type="checkbox" value="travel" name="hobby"/><span class="hobby">Du lịch</span>
+                        </div>
                     </div>
                 </div>
 
