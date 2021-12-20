@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ĐĂNG KÝ HỌC VIÊN</title>
+        <style>
+        .title-wrapper {
+            padding-bottom: 5px;
+            background-color:rgb(192, 236, 238);
+            color: blue;
+            font-size: 30px;
+        }
+        .inputgroup {
+            display: inline-block;
+
+        }
+        .label {
+            display: inline-block;
+            padding-bottom: 5px;
+            width: 150px;
+            font-size: 20px;
+            color: rgb(63, 31, 243)
+        }
+        .btn-send {
+            font-size: 20px;
+        }
+        .form-wrapper {
+            background-color: rgb(223, 223, 142);
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="form-wrapper">
+            <div class="title-wrapper">
+                ĐĂNG KÝ HỌC VIÊN
+            </div>
+            <form method="get" action="studentregister.html" class="myform">
+                <div>
+                    <div class="inputgroup">
+                        <span class="label">Họ và tên</span> <input type="text" name="name"/> <br>
+                        <span class="label">Ngày sinh</span> <input type="text" name="birthday"/> <br>
+                        <span class="label">Giới tính</span> 
+                            <input type="radio" value="gender" name="gender"/> Nam
+                            <input type="radio" value="gender" name="gender"/> Nữ <br>
+                        <span class="label">Địa chỉ</span> <input type="text" name="adress"/> <br>
+                        <span class="label">Lớp</span>
+                            <select>
+                                <option value="  ">-Chọn lớp-</option>
+                                <option value="  ">1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select> <br>
+                        <span class="label">Email</span> <input type="text" name="email"/> <br>
+                        <span class="label">Điện thoại</span> <input type="text" name="phone"/> <br>
+                    </div>
+                    <div>
+                        <span class="btn-send"><input type="button" name="sendinformation" value="Gửi thông tin"/></span>
+                        <span class="btn-send"><input type="button" name="reset" value="Nhập lại"/></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
